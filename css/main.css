@@ -1,0 +1,338 @@
+@import url('reset.css');
+
+/******************
+*  GLOBAL STYLES  *
+******************/
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.cf::before, .cf::after {
+	display: block;
+	content: " ";
+}
+
+.cf::after {
+	clear: both;
+}
+
+/******************
+*  HEADER STYLES  *
+******************/
+
+header {
+	width: 100%;
+	background: #2f2b4f url('../img/header-bg.jpg') 0 0 no-repeat;
+	background-size: cover;
+	padding: 30px;
+}
+
+header .logo {
+	width: 50%;
+	float: left;
+}
+
+header .logo img {
+	margin: 15px 0 330px 0;
+}
+
+header nav {
+	width: 50%;
+	float: left;
+	margin: 10px 0 330px 0;
+}
+
+header nav ul li {
+	display: inline-block;
+	position: relative;
+}
+
+header nav ul a,
+header nav ul a:visited {
+	display: inline-block;
+	font-size: 15px;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 15px;
+	margin: 0 7px;
+	border-radius: 8px;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+header a.cart {
+	text-indent: -9999px;
+	text-align: center;
+	width: 59px;
+	height: 59px;
+	background: transparent url('../img/sprite-1.png') -80px -140px no-repeat;
+	padding: 0;
+	vertical-align: middle;
+	border-radius: 0;
+	margin: 28px 0 0 40px;
+}
+
+header a.cart:hover {
+	background: transparent url('../img/sprite-1.png') -80px -140px no-repeat;
+	border-radius: 0;
+}
+
+header nav ul a:hover {
+	color: #000;
+	background: #fcff19;
+	border-radius: 8px;
+}
+
+header nav ul .dropdown {
+	display: none;
+	background: #fcff19;
+	color: #000;
+	padding: 0;
+	position: absolute;
+	top: 43px;
+	left: 7px;
+	width: 215px;
+	border-radius: 0 8px 8px 8px;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+header nav ul .dropdown a {
+	color: #000;
+}
+
+header nav ul li:first-child a:hover {
+	border-radius: 8px 8px 0 0;
+	transition: none;
+}
+
+header nav ul li:hover > ul.dropdown {
+	display: inherit;
+}
+
+header h1 {
+	font-size: 50px;
+	font-size: 5rem;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+header p {
+	font-size: 28px;
+	font-size: 2.8rem;
+	font-weight: 100;
+	color: #fff;
+	text-align: center;
+	padding: 23px 0 33px 0
+}
+
+header p .callout {
+	color: #fcff19;
+}
+
+header .btn-wrapper {
+	text-align: center;
+	padding: 0 0 30px;
+}
+
+header a.btn-shop {
+	display: inline-block;
+	font-size: 12px;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #FCFF19;
+	background: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 18px 30px 15px 30px;
+	border-radius: 8px;
+	margin-bottom: 290px;
+}
+
+header a.btn-shop:hover {
+	color: #000;
+	background: #FCFF19;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+header a.btn-down {
+	display: block;
+	text-indent: -9999px;
+	border-radius: 0;
+	width: 67px;
+	height: 77px;
+	background: transparent url('../img/sprite-1.png') 0 -128px no-repeat;
+	margin: 0 auto;
+}
+
+/***********************
+*  CATEGORIES SECTION  *
+***********************/
+
+#categories {
+	width: 100%;
+	background: #eeeeee url('../img/categories-bg.jpg') 0 0 no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding: 0 405px;
+}
+
+#categories .sub-heading, #popular-bikes .sub-heading {
+	font-size: 2.8rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 73px 0;
+}
+
+#categories .series {
+	width: 33.3%;
+	height: 285px;
+	float: left;
+	background: transparent url('../img/categories-fixed-bg.jpg') center center no-repeat;
+	margin: 0 0 162px 0;
+	cursor: pointer;
+}
+
+#categories .premium {
+	background: transparent url('../img/categories-premium-bg.jpg') center center no-repeat;
+}
+
+#categories .city-bikes {
+	background: transparent url('../img/categories-city-bg.jpg') center center no-repeat;
+}
+
+#categories .series h4 {
+	color: #FCFF19;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0 0 12px 0;
+	padding: 120px 0 0 0;
+}
+
+#categories .series p {
+	color: #fff;
+	font-size: 1.6rem;
+	font-weight: lighter;
+}
+
+/**************************
+*  POPULAR BIKES SECTION  *
+**************************/
+
+#popular-bikes {
+	width: 100%;
+	background: #fff;
+	text-align: center;
+	padding: 0 0 35px 0;
+}
+
+#popular-bikes .sub-heading {
+	padding: 70px 0 100px 0;
+}
+
+#popular-bikes li {
+	display: inline-block;
+}
+
+#popular-bikes li:nth-child(2) {
+	margin: 0 9%;
+}
+
+#popular-bikes img {
+	display: block;
+}
+
+#popular-bikes .bike-info {
+	width: 40%;
+	float: left;
+	text-align: left;
+}
+
+#popular-bikes .bike-info h5 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0 0 10px 0;
+}
+
+#popular-bikes .bike-info p.bike-price {
+	font-size: 1.5rem;
+}
+
+#popular-bikes .bike-option {
+	width: 60%;
+	float: left;
+	text-align: right;
+}
+
+#popular-bikes .bike-option #bike-mods {
+	width: 145px;
+	font-family: 'Roboto', Helvetica, sans-serif;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 16px 15px 16px 20px;
+	margin: 0 10px 0 0;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#popular-bikes .bike-option input[type="submit"] {
+	width: 93px;
+	font-size: 1.2rem;
+	font-weight: bold;
+	background-color: #b7b7b7;
+	color: #fff;
+	text-transform: uppercase;
+	border: none;
+	padding: 17px 34px 17px 34px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all ease-in 0.2s;
+}
+
+#popular-bikes .bike-option input[type="submit"]:hover {
+	background: #000;
+	color: #FCFF19;
+}
+
+
