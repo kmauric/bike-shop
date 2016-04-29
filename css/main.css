@@ -302,6 +302,7 @@ header a.btn-down {
 	font-size: 1.2rem;
 	font-weight: bold;
 	text-transform: uppercase;
+	background: transparent url("../img/down-arrow.png") 110px center no-repeat;
 	padding: 16px 15px 16px 20px;
 	margin: 0 10px 0 0;
 	-webkit-border-radius: 8px;
